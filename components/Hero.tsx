@@ -5,7 +5,7 @@ const Hero = () => {
     <section  className="sticky top-0 h-screen z-1 w-full">
       <div className="absolute w-full h-full">
         <video 
-          src="/vids/prill-bg.mp4"
+          src="/vids/star.mp4"
           className="w-full h-full object-cover brightness-70"
           autoPlay
           muted
