@@ -53,7 +53,7 @@ export default function Navbar() {
           className="absolute left-1/2 -translate-x-1/2 select-none pointer-events-none"
         >
           <div
-            className="flex flex-col font-mono w-[120px] sm:w-[140px] md:w-40
+            className="flex flex-col font-mono w-[120px] sm:w-[190px] md:w-40
             text-lg sm:text-2xl md:text-3xl font-extrabold text-black uppercase"
           >
             <p
@@ -88,7 +88,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.aside
-            className="fixed top-0 left-0 h-full w-3/4 lg:w-1/3 bg-neutral-50 
+            className="fixed top-0 left-0 h-full w-3/4 sm:w-1/3 bg-neutral-50 
             text-neutral-900 z-50 flex flex-col justify-center px-5 sm:px-12 space-y-12"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}

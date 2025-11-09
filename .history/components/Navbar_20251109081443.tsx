@@ -88,8 +88,8 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.aside
-            className="fixed top-0 left-0 h-full w-3/4 lg:w-1/3 bg-neutral-50 
-            text-neutral-900 z-50 flex flex-col justify-center px-5 sm:px-12 space-y-12"
+            className="fixed top-0 left-0 h-full w-3/4 sm:w-1/3 bg-neutral-50 
+            text-neutral-900 z-50 flex flex-col justify-center px-3 sm:px-12 space-y-12"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
