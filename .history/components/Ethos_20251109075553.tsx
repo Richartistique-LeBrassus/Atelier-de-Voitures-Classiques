@@ -1,4 +1,3 @@
-"use client"
 import { motion } from 'framer-motion';
 
 const Ethos = () => {
@@ -16,38 +15,29 @@ const Ethos = () => {
       >
         <div className="lg:flex-col md:px-20">
           <motion.h2 
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.3 }}
+            
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}
           className="text-4xl sm:text-5xl lg:text-6xl mb-10 sm:mb-16 xl:mb-10
           uppercase text-left tracking-[0.3rem]
           flex-wrap max-w-[270px] font-extrabold font-mono">
             Prill Porsche Classics <br/>                             
           </motion.h2>
           <div className="w-full inline-flex text-end lg:p-5 xl:px-12">
-            <motion.h3
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.3 }} 
-            className="text-4xl md:text-5xl xl:text-6xl mb-16 sm:sm:mb-24 xl:mb-16
+            <h2 className="text-4xl md:text-5xl xl:text-6xl mb-16 sm:sm:mb-24 xl:mb-16
              uppercase text-left tracking-[0.3rem]
             flex-wrap max-w-[270px]">
               <span className="font-bold font-mono text-2xl">Unrivalled<br/>Experience</span>
               <br/>
               <span className="font-bold font-mono text-2xl">Unrivalled<br/>Expertise</span>   
-            </motion.h3>
+            </h2>
           </div>
         
         
         
-        <motion.p
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.3 }}
-          className="leading-9 sm:leading-8 font-mono text-left lg:max-w-[470px] xl:indent-12 
+        <p className="leading-9 sm:leading-8 font-mono text-left lg:max-w-[470px] xl:indent-12 
           lg:h-full items-end align-bottom sm:mb-10 indent-4
           xl:max-w-[560px] max-w-[570px] xl:p-5"
         >
@@ -57,17 +47,13 @@ const Ethos = () => {
           <span className="font-extrabold"> Virtuoso Engineer Mr. Prill</span> restores each machine as a living sculpture of speed and memory.
           Every detail is an act of reverence
           <span className="font-extrabold"> — where engineering meets emotion, and heritage becomes drivable, resonant art.</span>
-        </motion.p>
+        </p>
         </div>
       </div>
 
       {/* Lookbook Visual */}
       <div className="lookbook container responsivegrid w-full max-w-7xl">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.3 }}
+        <div data-v-1367169b="" 
           className=" 
           grid grid-cols-1 2xl:grid-cols-2 xl:gap-1 gap-4 pb-24">
           
@@ -120,7 +106,7 @@ const Ethos = () => {
               />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
