@@ -340,7 +340,7 @@ export function Coroserie({
           <div key={i} className="snap-center w-full">
             <Image
               src={img.src}
-              alt="N/A"
+              alt={img.alt}
               width={900}
               height={600}
               className="object-cover h-full w-[15vh] md:w-[20vh] lg:w-[25vh]"

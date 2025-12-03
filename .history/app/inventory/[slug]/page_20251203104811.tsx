@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform, easeInOut, easeOut } from "framer-motion";
+import { motion, useScroll, useTransform, easeInOut } from "framer-motion";
 import { Phone, Mail } from "lucide-react"
 
 export type Vehicle = {
@@ -21,9 +21,10 @@ export type Vehicle = {
   specs?: Record<string, string>;
 };
 
+// --- Variants & animation helpers -------------------------------------------------
 const heroVariants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: easeOut } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 const imageCard = {
@@ -340,7 +341,7 @@ export function Coroserie({
           <div key={i} className="snap-center w-full">
             <Image
               src={img.src}
-              alt="N/A"
+              alt={img.alt}
               width={900}
               height={600}
               className="object-cover h-full w-[15vh] md:w-[20vh] lg:w-[25vh]"
